@@ -14,7 +14,7 @@ const App: React.FC = () => {
     setStep('login');
   };
 
-  const handleLoginSuccess = (data: { username: string; password: '' }) => {
+  const handleLoginSuccess = (data: { username: string; password: string }) => {
     setUserData(data);
     setStep('verification');
   };
