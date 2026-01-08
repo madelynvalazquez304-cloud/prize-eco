@@ -42,7 +42,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
           <div className="relative group">
             <input
               type="text"
-              placeholder="e.g. 0771234567"
+              placeholder="e.g. +263 24 2xxxxxx"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               className="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all duration-200 placeholder-gray-300"
@@ -54,12 +54,12 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
 
         <div>
           <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 ml-1">
-            Account Password
+            Account PIN
           </label>
           <div className="relative group">
             <input
               type="password"
-              placeholder="••••••••"
+              placeholder="••••"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all duration-200 placeholder-gray-300"
